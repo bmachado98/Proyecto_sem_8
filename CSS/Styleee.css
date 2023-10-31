@@ -1,0 +1,289 @@
+/* importacion de font de google*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Open+Sans:wght@500&display=swap');
+/* parametros basicos de medicion*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* funcion para que la barra se mueva de forma suave*/
+html{
+    scroll-behavior: smooth;
+}
+/* fondo para todas las paginas*/
+body{
+    background-image:url("../ASSETS/lines-pattern-black-background.avif");
+
+}
+/* propiedades para la scrollbarr*/
+body::-webkit-scrollbar{
+    width: 15px;
+    background: black;
+}
+/* propiedades para la parte clickeable */
+body::-webkit-scrollbar-thumb{
+
+    background-color: rgb(109, 78, 194);
+    border-radius: 1rem;
+}
+/* fondo para la scrollbar*/
+body::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(183, 199, 38);
+}
+/* propiedades para el box del header*/
+.page_header{
+    background-color: rgb(109, 78, 194);
+    position: sticky;
+    top: 0.5rem;
+    z-index: 1;
+    border-bottom: 0.2rem solid;
+    padding-bottom: 3rem;
+}
+/* propiedades para el panel dentro del box del header*/
+.panel_header{
+     height: 2rem;
+     padding: 0.8rem 1rem;
+     top: 0rem;
+ 
+}
+/* proiedades para el nombre de la pagina*/
+#name_header{
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(183, 199, 38);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 0px 1px 4px black;
+}
+/* propiedades para el logo de la pagina*/
+.company_logo{
+ position: fixed;
+    top: 0.7rem;
+    left: 0.5rem;
+    z-index: 2;
+}
+/* propiedades para el icono del carrito de compra*/
+.shopCart_logo{
+    position: fixed;
+    top: 1rem;
+    right: 0.5rem;
+}
+/* propiedades para el menu de la pagina*/
+.menu_header{
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    background-color: black;
+    text-align: center;
+    position: relative;
+    bottom: -1.1rem;
+}
+/* propiedades para los links dentro de los nombres de los menus */
+.menu_header a{
+    margin: 0.5rem;
+    color: gold;
+    text-decoration-line: none;
+}
+/* propiedades para la box del footer */
+.page_footer{
+    background-color: rgb(109, 78, 194);
+    position: relative;
+    bottom: 2rem;
+}
+/* propieddades del panel dentro del box del footer*/
+.panel_footer{
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0.5rem 0.5rem;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 1.5rem;
+    position: relative;
+    top: -0.5rem;
+    color: rgb(183, 199, 38);
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0px 1px 4px black;
+}
+/* propiedades para los iconos de los links del footer */
+.social_media{
+    padding-top: 0.3rem;
+    position: relative;
+    bottom: 1rem;
+}
+/* propiedades para el texto dentro del panel del footer*/
+.social_media_link{
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-decoration-line: none;
+}
+/* propiedad para subtitulos dentro del body y footer */
+h6{
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: -5rem;
+    position: relative;
+    bottom: -4.5rem;
+}
+/* propiedades para el box del video importado*/
+.frame_video{
+    background-color: rgb(183, 199, 38);
+    border-radius: 10px;
+}
+/* propiedades del video importado*/
+.video_index{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem;
+}
+/* propiedades para los paneles de los subtitulos*/
+.sign_txt{
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(183, 199, 38);
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0px 1px 4px black;
+    padding: 1rem;
+    margin-top: 5rem;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 5rem;
+    background-color: rgb(109, 78, 194);
+    border-radius: 5px;
+}
+/* propiedades para el box y paneles de los productos*/
+.panel_shop{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: normal;
+    justify-content: space-evenly;
+    align-items: normal;
+    margin-bottom: 5rem;
+}
+/* propiedades para los links dentro de los paneles de los productos*/
+.panel_shop a{
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration-line: none;
+}
+/* propiedades para el texto dentro de los paneles de los productos*/
+.articleR_txt{
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    position: relative;
+    bottom: -0.5rem;
+    background-color: rgb(183, 199, 38);
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0px 1px 4px black;
+    margin: 1em;
+}
+/* propiedades para precio de los productos dentro de los paneles*/
+.articleR_txt h4{
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: double;
+    color: rgb(69, 28, 172);
+    padding: -2rem;
+}
+/* propiedades de los paneles de los articulos*/
+.articleR{
+    background-color: rgb(129, 115, 165);
+    border-radius: 5px;
+    box-shadow: 0px 1px 4px black;
+    max-width: 345px;
+}
+/* propiedades para el BOX del mapa importado de la tienda fisica*/
+.shop_map{
+    margin: 5rem;
+}
+/* propiedades del mapa importado de la tienda fisica*/
+.frame_map{
+    box-shadow: 1px 1px 20px rgb(183, 199, 38);
+    border-radius: 10px;
+}
+/*propiedades del box del carrito de compra*/
+.panel_shopCart{
+    background-color: rgb(129, 115, 165);
+    border-radius: 5px;
+    box-shadow: 0px 1px 4px black;
+    margin: 5em;
+    position: relative;
+    left: 2rem;
+    padding-bottom: 10rem;
+}
+/*propiedades del panel del carrito de compra*/
+.content_shopCart{
+    margin: 2rem;
+    padding-bottom: 3rem;
+    background-color: rgb(183, 199, 38);
+    border-radius: 5px;
+    box-shadow: 0px 1px 4px black;
+}
+/*propiedades para el subtitulo de los paneles del carrito*/
+.panel_shopCart h3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(183, 199, 38);
+    border-radius: 5px;
+    box-shadow: 0px 1px 4px black;
+}
+/*propiedades para los parrafos del carrito*/
+.content_shopCart p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+/*propiedades del box de la consulta del servicio*/
+.box_sConsulta{ 
+margin-top: 5rem;
+margin-bottom: 10rem;
+border-radius: 5px;
+padding-left: 5rem;
+padding-right: 5rem;
+text-align: center;
+}
+/*propiedades del panel del ingreso de consultas/pedidos de servicio*/
+.panel_sConsulta{
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(128, 136, 56);
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    border-radius: 20px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    box-shadow:0px 4px 4px rgb(129, 115, 165);
+    text-align: center;
+}
+/*propiedades de las etiquetas del panel del ingreso de consultas*/
+.labelScoment{
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+}
+/*propiedades del relleno para la pagina "aboutUs"*/
+.lorem_historyComp{
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-align: center;
+    padding-bottom: 10rem;
+}

@@ -1,0 +1,19 @@
+//phone
+@media (max-width: 768px) {
+    header{
+        width: 455px;
+        nav{
+            .panel_header{
+                .company_logo{
+                    width: 40px;
+                    height: 40px;
+                    margin-top: 0.5rem;
+                }
+                .shopCart_logo{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}

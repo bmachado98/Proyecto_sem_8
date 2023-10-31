@@ -1,0 +1,16 @@
+//import base properties
+@import "base/reset";
+@import "base/body";
+//import layout properties
+@import "layout/header";
+@import "layout/footer";
+@import "layout/shopcart";
+//import components properties
+@import "components/variables";
+@import "components/media";
+@import "components/signs";
+@import "components/grids";
+//import responsive properties
+@import "responsive/desktop";
+@import "responsive/tablet";
+@import "responsive/phone";
