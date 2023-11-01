@@ -47,6 +47,7 @@ header nav .panel_header a picture .shopCart_logo {
   position: fixed;
   top: 0.5rem;
   right: 1rem;
+  z-index: 2;
 }
 header nav .panel_header h1 {
   font-family: "Josefin Sans", sans-serif;
@@ -321,8 +322,8 @@ input:hover {
   gap: 15px;
 }
 .exhibitor .item {
-  width: 250px;
-  height: 250px;
+  width: 100%;
+  height: 100%;
   background-size: cover;
   border: solid 4px rgb(183, 199, 38);
   border-radius: 12px;
@@ -335,18 +336,10 @@ input:hover {
 }
 .exhibitor .bike {
   grid-area: bike;
-  width: 500px;
-  height: 250px;
   background-color: rgb(109, 78, 194);
-}
-.exhibitor .bike img {
-  position: relative;
-  top: -3rem;
 }
 .exhibitor .biketwo {
   grid-area: biketwo;
-  width: 500px;
-  height: 250px;
   background-color: rgb(183, 199, 38);
   border: solid 4px rgb(109, 78, 194);
 }
@@ -356,8 +349,6 @@ input:hover {
 }
 .exhibitor .panoram {
   grid-area: panoram;
-  width: 770px;
-  height: 250px;
 }
 .exhibitor .panoram img {
   border-radius: 12px;
@@ -464,7 +455,7 @@ input:hover {
 
 @media (max-width: 768px) {
   header {
-    width: 455px;
+    width: 425px;
   }
   header nav .panel_header .company_logo {
     width: 40px;
@@ -472,8 +463,77 @@ input:hover {
     margin-top: 0.5rem;
   }
   header nav .panel_header .shopCart_logo {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
+    margin-top: 0.5rem;
+  }
+  header nav .panel_header .menu_header li a {
+    font-size: 0.8rem;
+  }
+  .frame_video {
+    width: 425px;
+    margin: 2rem 0rem 0rem 0rem;
+  }
+  .frame_video iframe {
+    width: 400px;
+  }
+  .sign_txt {
+    font-size: 0.5rem;
+  }
+  .exhibitor {
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(3, 120px);
+  }
+  footer .panel_footer {
+    font-size: 1.2rem;
+  }
+  footer .panel_footer h6 {
+    margin-bottom: 1rem;
+  }
+  footer .panel_footer .social_media a img {
+    width: 30px;
+    height: 30px;
+  }
+  .grid_shop {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .grid_shop .shop_item {
+    width: 300px;
+    height: 300px;
+  }
+  .grid_shop .shop_item img {
+    width: 70%;
+    height: 50%;
+  }
+  .grid_shop .cardtwo img {
+    width: 50%;
+  }
+  .grid_shop .cardfour {
+    grid-area: cardfour;
+  }
+  .grid_shop .cardfour img {
+    margin-bottom: 0rem;
+  }
+  .panel_sConsulta {
+    width: 80%;
+    margin: 0rem 1rem 20rem 2.5rem;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.8rem;
+    padding-left: 1rem;
+  }
+  .panel_sConsulta #comentsService {
+    width: 19rem;
+  }
+  .box_shopCart {
+    flex-direction: column;
+  }
+  .box_shopCart .panel_shopCart {
+    width: 100%;
   }
 }
 

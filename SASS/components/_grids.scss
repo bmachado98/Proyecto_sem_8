@@ -12,8 +12,8 @@
     gap: 15px;
 
     .item{
-        width: 250px;
-        height: 250px;
+        width: 100%;
+        height: 100%;
         background-size: cover;
         border: solid 4px $coloruno;
         border-radius: 12px;
@@ -27,18 +27,10 @@
     }
     .bike{
         grid-area: bike;
-        width: 500px;
-        height: 250px;
         background-color: $colordos;
-        img{
-            position: relative;
-            top: -3rem;
-        }
     }
     .biketwo{
         grid-area: biketwo;
-        width: 500px;
-        height: 250px;
         background-color: $coloruno;
         border: solid 4px $colordos;
         img{
@@ -48,9 +40,6 @@
     }
     .panoram{
         grid-area: panoram;
-        width: 770px;
-        height: 250px;
-        
         img{
             border-radius: 12px;
         }
