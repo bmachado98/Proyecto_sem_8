@@ -28,6 +28,7 @@ header {
   background-color: rgb(109, 78, 194);
   position: sticky;
   top: 0;
+  width: 100%;
   height: 6rem;
   z-index: 1;
   border-bottom: 0.2rem solid;
@@ -241,13 +242,16 @@ span {
   font-family: "Josefin Sans", sans-serif;
   font-family: "Open Sans", sans-serif;
   height: 20rem;
-  width: 70rem;
+  width: 70%;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-content: center;
-  justify-content: space-around;
-  align-items: normal;
-  margin: 10rem 20rem 10rem 24rem;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15%;
+  margin-right: 10%;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
   border-radius: 12px;
   background-color: rgb(183, 199, 38);
   box-shadow: 0px 4px 4px rgb(109, 78, 194);
@@ -453,9 +457,9 @@ input:hover {
   margin-left: -1rem;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 769px) and (max-width: 960px) {
   header {
-    width: 425px;
+    width: 100%;
   }
   header nav .panel_header .company_logo {
     width: 40px;
@@ -471,11 +475,96 @@ input:hover {
     font-size: 0.8rem;
   }
   .frame_video {
-    width: 425px;
+    width: 100%;
+    height: 25rem;
     margin: 2rem 0rem 0rem 0rem;
   }
   .frame_video iframe {
-    width: 400px;
+    width: 80%;
+  }
+  .sign_txt {
+    font-size: 0.8rem;
+  }
+  .exhibitor {
+    grid-template-columns: repeat(3, 180px);
+    grid-template-rows: repeat(3, 180px);
+  }
+  footer .panel_footer {
+    font-size: 1.2rem;
+  }
+  footer .panel_footer h6 {
+    margin-bottom: 1rem;
+  }
+  footer .panel_footer .social_media a img {
+    width: 30px;
+    height: 30px;
+  }
+  .grid_shop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .grid_shop .shop_item {
+    width: 300px;
+    height: 300px;
+  }
+  .grid_shop .shop_item img {
+    width: 70%;
+    height: 50%;
+  }
+  .grid_shop .cardtwo img {
+    width: 50%;
+  }
+  .grid_shop .cardfour {
+    grid-area: cardfour;
+  }
+  .grid_shop .cardfour img {
+    margin-bottom: 0rem;
+  }
+  .panel_sConsulta {
+    width: 80%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.8rem;
+    align-items: center;
+  }
+  .panel_sConsulta #comentsService {
+    width: 19rem;
+  }
+  .box_shopCart {
+    flex-direction: column;
+  }
+  .box_shopCart .panel_shopCart {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+  header nav .panel_header .company_logo {
+    width: 40px;
+    height: 40px;
+    margin-top: 0.5rem;
+  }
+  header nav .panel_header .shopCart_logo {
+    width: 30px;
+    height: 30px;
+    margin-top: 0.5rem;
+  }
+  header nav .panel_header .menu_header li a {
+    font-size: 0.8rem;
+  }
+  .frame_video {
+    width: 100%;
+    height: 15rem;
+    margin: 2rem 0rem 0rem 0rem;
+  }
+  .frame_video iframe {
+    width: 80%;
   }
   .sign_txt {
     font-size: 0.5rem;
@@ -519,12 +608,11 @@ input:hover {
   }
   .panel_sConsulta {
     width: 80%;
-    margin: 0rem 1rem 20rem 2.5rem;
+    margin-left: 10%;
     flex-wrap: nowrap;
-    flex-direction: column;
+    flex-direction: center;
     justify-content: center;
     font-size: 0.8rem;
-    padding-left: 1rem;
   }
   .panel_sConsulta #comentsService {
     width: 19rem;

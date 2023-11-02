@@ -1,8 +1,8 @@
-//phone
+//phone responsive
 @media (max-width: 768px) {
-    
+
     header{
-        width: 425px;
+        width: 100%;
         nav{
             .panel_header{
                 .company_logo{
@@ -26,10 +26,11 @@
         }
     }
     .frame_video{
-        width: 425px;
+        width: 100%;
+        height: 15rem;
         margin: 2rem 0rem 0rem 0rem;
         iframe{
-            width: 400px;
+            width: 80%;
         }
     }
     .sign_txt{
@@ -47,7 +48,7 @@
 
             h6{
                 margin-bottom: 1rem;
-            }   
+            }
             .social_media{
                 a{
                     img{
@@ -69,14 +70,14 @@
             img{
                 width: 70%;
                 height: 50%;
-            } 
+            }
         }
         .cardtwo{
             img{
                 width: 50%;
             }
         }
-        .cardfour{ 
+        .cardfour{
             grid-area: cardfour;
             img{
                 margin-bottom: 0rem;
@@ -85,12 +86,12 @@
     }
     .panel_sConsulta{
         width: 80%;
-        margin: 0rem 1rem 20rem 2.5rem;
+        margin-left: 10%;
         flex-wrap: nowrap;
-        flex-direction: column;
+        flex-direction: center;
         justify-content: center;
         font-size: 0.8rem;
-        padding-left: 1rem;
+        // padding-left: 1rem;
         #comentsService{
             width: 19rem;
         }
@@ -99,7 +100,7 @@
         flex-direction: column;
         .panel_shopCart{
             width: 100%;
-            
+
         }
     }
 }
